@@ -1,0 +1,32 @@
+<view class="main-list">
+    <scroll-view scroll-y="true" wx:if="{{loadingHidden}}" bindscrolltoupper="actionToupper" bindscrolltolower="actionTolower" scroll-top="{{refreshHidden ? 1 : 0}}">
+      <view hidden="{{refreshHidden}}">
+        <button plain="true" loading="true">正在刷新</button>
+      </view>
+      <ul>
+        <navigator url="../detail/detail?id={{item.id}}" wx:for="{{list}}" wx:for-item="item">
+        <li>
+          <view class="apply">
+              <image src="{{item.img}}" mode="aspectFill">
+              </image>
+              <view class="shiyi">
+                <view class="shiyileft">
+                  <span>适宜：</span>
+                  <view wx:for="{{item.guanxi}}" wx:for-item="items">{{items}}</view>
+
+                </view>
+                <view class="love">
+                    <span>{{item.lover}}</span>人喜欢
+                </view>
+                </view>
+          </view>
+        </li>
+      </navigator>
+      </ul>
+      <view hidden="{{loadmoreHidden}}">
+        <button plain="true" loading="true">正在加载</button>
+      </view>
+    </scroll-view>
+
+
+</view>

@@ -1,0 +1,79 @@
+.main-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main-nav{
+  height: 35px;
+background-color:  #fff;
+}
+.main-nav ul{
+  height: 35px;
+  display: flex;
+}
+.main-nav ul li{
+  height: 35px;
+  flex: 1;
+  line-height: 35px;
+  text-align: center;
+  color: #7f7f7f;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.main-nav ul li.active{
+  border-bottom: 2px solid #ed5d5d;
+  color: #ed5d5d;
+}
+.main-list{
+  flex: 1;
+  overflow: hidden;
+}
+.main-list scroll-view{
+  height: 100%;
+
+}
+.main-list scroll-view ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+}
+.main-list scroll-view ul navigator{
+  box-sizing: border-box;
+  /*border: solid 1px #eee;*/
+  width: 50%;
+
+  height: 150px;
+}
+.main-list scroll-view ul navigator li{
+  width: 50%;
+
+  height: 150px;
+}
+.main-list scroll-view ul navigator li view{
+  border: solid 1px #eee;
+  width: 80%;
+  height: 135px;
+  display: flex;
+  flex-direction: column;
+}
+.main-list scroll-view ul navigator li view image{
+width: 100%;
+height: 112px;
+}
+.main-list scroll-view ul navigator li view b{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+.main-list scroll-view ul navigator li view b span{
+  font-size: .3rem;
+  /*line-height: 20%;*/
+  color: #7f7f7f;
+}
+.main-list scroll-view ul navigator li view b i{
+  /*line-height: 20%;*/
+  font-size: .3rem;
+  color: red;
+}

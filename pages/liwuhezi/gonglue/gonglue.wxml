@@ -1,0 +1,105 @@
+<view class="main-container">
+  <nav class="main-nav">
+    <ul>
+      <li class="{{current == 0 ? 'active' : ''}}" catchtap="switchSlider" data-index="0">推荐</li>
+      <li class="{{current == 1 ? 'active' : ''}}" catchtap="switchSlider" data-index="1">送吃货</li>
+      <li class="{{current == 2 ? 'active' : ''}}" catchtap="switchSlider" data-index="2">送女票</li>
+      <li class="{{current == 3 ? 'active' : ''}}" catchtap="switchSlider" data-index="3">送自己</li>
+      <li class="{{current == 4 ? 'active' : ''}}" catchtap="switchSlider" data-index="4">送闺蜜</li>
+    </ul>
+  </nav>
+  <swiper class="main-list" autoplay="{{swiper.autoplay}}" indicator-dots="{{swiper.indicator}}" durayion="{{swiper.durayion}}" current="{{current}}" bindchange="changeSlider">
+    <block>
+      <swiper-item>
+
+        <scroll-view scroll-y="true">
+          <ul>
+            <navigator url="../detail0/detail0?id={{item.id}}" wx:for="{{list}}"  wx:for-item="item" >
+            <li>
+              <view>
+                <image src="{{item.image_url}}"></image>
+              <b>
+                  <span>{{item.title}}</span>
+                  <i>{{item.price}}</i>
+                </b>
+              </view>
+            </li>
+          </navigator>
+          </ul>
+        </scroll-view>
+      </swiper-item>
+      <swiper-item>
+        送吃货
+        <scroll-view scroll-y="true">
+          <ul>
+            <navigator url="../detail0/detail0?id={{item.id}}" wx:for="{{list1}}"  wx:for-item="item" >
+            <li>
+              <view>
+                <image src="{{item.image_url}}"></image>
+              <b>
+                  <span>{{item.title}}</span>
+                  <i>{{item.price}}</i>
+                </b>
+              </view>
+            </li>
+          </navigator>
+          </ul>
+        </scroll-view>
+      </swiper-item>
+      <swiper-item>
+        送女票
+        <scroll-view scroll-y="true">
+          <ul>
+            <navigator url="../detail0/detail0?id={{item.id}}" wx:for="{{list2}}"  wx:for-item="item" >
+            <li>
+              <view>
+                <image src="{{item.image_url}}"></image>
+              <b>
+                  <span>{{item.title}}</span>
+                  <i>{{item.price}}</i>
+                </b>
+              </view>
+            </li>
+          </navigator>
+          </ul>
+        </scroll-view>
+      </swiper-item>
+      <swiper-item>
+        送自己
+        <scroll-view scroll-y="true">
+          <ul>
+            <navigator url="../detail0/detail0?id={{item.id}}" wx:for="{{list3}}"  wx:for-item="item" >
+            <li>
+              <view>
+                <image src="{{item.image_url}}"></image>
+              <b>
+                  <span>{{item.title}}</span>
+                  <i>{{item.price}}</i>
+                </b>
+              </view>
+            </li>
+          </navigator>
+          </ul>
+        </scroll-view>
+      </swiper-item>
+      <swiper-item>
+        送闺蜜
+        <scroll-view scroll-y="true">
+          <ul>
+            <navigator url="../detail0/detail0?id={{item.id}}" wx:for="{{list4}}"  wx:for-item="item" >
+            <li>
+              <view>
+                <image src="{{item.image_url}}"></image>
+              <b>
+                  <span>{{item.title}}</span>
+                  <i>{{item.price}}</i>
+                </b>
+              </view>
+            </li>
+          </navigator>
+          </ul>
+        </scroll-view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

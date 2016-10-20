@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/liwuhezi/gonglue/gonglue",
+    "pages/liwuhezi/main/main",
+    "pages/liwuhezi/my/my",
+    "pages/liwuhezi/signins/signins",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+    "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#ed5d5d",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/liwuhezi/main/main",
+        "text": "订制",
+        "iconPath": "images/icon_home_normal.png",
+        "selectedIconPath": "images/icon_home_select.png"
+      },
+      {
+        "pagePath": "pages/liwuhezi/gonglue/gonglue",
+        "text": "发现",
+        "iconPath": "images/icon_find_normal.png",
+        "selectedIconPath": "images/icon_find_select.png"
+      },
+      {
+        "pagePath": "pages/liwuhezi/my/my",
+        "text": "我的",
+        "iconPath": "images/icon_user_normal.png",
+        "selectedIconPath": "images/icon_user_select.png"
+      }
+    ]
+
+  }
+
+
+}

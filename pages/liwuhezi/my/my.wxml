@@ -1,0 +1,82 @@
+<import src="/tpls/signin.wxml" />
+
+<template is="signin" data="{{modalHidden, ...userInfo}}"></template>
+<view class="main-container">
+  <view class="main-header">
+    <view class="denglu">
+      <view class="icondenglu">
+      </view>
+
+    </view>
+    <view class="textdenglu" >
+      <i>登录</i>
+    </view>
+  </view>
+
+<view class="main-list">
+  <ul>
+    <li>
+    <view>
+        <image src="/images/icon_user_topay_entry.png"></image>
+        <b>待支付</b>
+    </view>
+    </li>
+    <li>
+    <view>
+        <image src="/images/icon_user_to_dispatch.png"></image>
+        <b>待发货</b>
+    </view>
+    </li>
+    <li>
+    <view>
+        <image src="/images/icon_user_to_accept.png"></image>
+        <b>待收货</b>
+    </view>
+    </li>
+    <li class="li3">
+      <view>
+        <image src="/images/icon_user_finish.png"></image>
+        <b>已收货</b>
+      </view>
+        <span></span>
+    </li>
+    <li>
+      <view>
+        <image src="/images/icon_user_all.png"></image>
+        <b>全部</b>
+      </view>
+    </li>
+  </ul>
+</view>
+
+<view class="center">
+  <view class="dingdan">
+    <view class="dingdan-left">
+      <span><image src="/images/icon_taobao_orders_entry.png"></image></span><b>淘宝订单</b>
+    </view>
+    <view class="dingdan-right"><i>要记得这里面的东东哦</i><span><image src="/images/icon_step_next.png"></image></span></view>
+  </view>
+
+  <view class="shoucang">
+    <view class="shoucang-left">
+      <span><image src="/images/icon_user_collection_entry.png"></image></span><b>我的收藏</b>
+    </view>
+    <view class="shoucang-right"><i>查看您收藏的礼物</i><span><image src="/images/icon_step_next.png"></image></span></view>
+    </view>
+</view>
+
+<view class="bottom">
+  <view class="dingdan">
+    <view class="dingdan-left">
+      <span><image src="/images/icon_user_follow_entry.png"></image></span><b>关注我们</b>
+    </view>
+    <view class="dingdan-right"><i>免费参加抽奖活动哦</i><span><image src="/images/icon_step_next.png"></image></span></view>
+  </view>
+
+  <view class="shoucang">
+    <view class="shoucang-left">
+      <span><image src="/images/icon_user_feedback_entry.png"></image></span><b>问题反馈</b>
+    </view>
+    <view class="shoucang-right"><i>购买过程有什么问题</i><span><image src="/images/icon_step_next.png"></image></span></view>
+    </view>
+</view>

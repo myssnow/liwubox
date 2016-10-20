@@ -1,0 +1,9 @@
+<template name="signin">
+  <view>
+    <modal title="您还未登录" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" bindconfirm="actionConfirm" bindcancel="actionCancel">
+      <view class="section">
+
+      </view>
+    </modal>
+  </view>
+</template>
